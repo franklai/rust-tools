@@ -31,9 +31,9 @@ jobs:
           override: true
       - uses: actions-rs/cargo@v1
         with:
-          use-cross: false
+          use-cross: true
           command: build
-          args: --release --manifest-path tools/fd/Cargo.toml --target-dir dist
+          args: --release --target=${{ matrix.target }} --manifest-path tools/fd/Cargo.toml --target-dir dist
       - uses: actions/upload-artifact@v2
         with:
           name: fd
