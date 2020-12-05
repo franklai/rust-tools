@@ -29,11 +29,11 @@ jobs:
           toolchain: stable
           target: ${{ matrix.target }}
           override: true
-      - uses: actions-rs/cargo@v1
-        with:
-          use-cross: true
-          command: build
-          args: --release --target=${{ matrix.target }} --manifest-path tools/fd/Cargo.toml --target-dir dist
+      - name: Use Cross
+        run: cargo install cross
+      - name: Build release Binary
+        run: cross build --verbose --release --target ${{ matrix.target }} --target-dir dist
+
       - uses: actions/upload-artifact@v2
         with:
           name: fd
