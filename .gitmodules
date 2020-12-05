@@ -1,0 +1,9 @@
+[submodule "tools/fd"]
+	path = tools/fd
+	url = https://github.com/sharkdp/fd.git
+[submodule "tools/sd"]
+	path = tools/sd
+	url = https://github.com/chmln/sd.git
+[submodule "tools/ripgrep"]
+	path = toos/ripgrep
+	url = https://github.com/BurntSushi/ripgrep.git
