@@ -30,6 +30,6 @@ jobs:
           override: true
       - uses: actions-rs/cargo@v1
         with:
-          use-cross: true
+          use-cross: false
           command: build
-          args: --release --target=${{ matrix.target }} --manifest-path tools/fd/Cargo.toml --target-dir dist
+          args: --release --manifest-path tools/fd/Cargo.toml --target-dir dist
