@@ -5,5 +5,5 @@
 	path = tools/sd
 	url = https://github.com/chmln/sd.git
 [submodule "tools/ripgrep"]
-	path = toos/ripgrep
+	path = tools/ripgrep
 	url = https://github.com/BurntSushi/ripgrep.git
