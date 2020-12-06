@@ -10,7 +10,7 @@ name: Cross-compile
 
 jobs:
   build:
-    name: Build fd
+    name: Build tool
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -19,6 +19,10 @@ jobs:
           # - aarch64-unknown-linux-gnu
           - i686-unknown-linux-gnu
           # - x86_64-unknown-linux-gnu
+        tool:
+          # - fd
+          # - sd
+          - ripgrep
     steps:
       - uses: actions/checkout@v2
         with:
@@ -34,9 +38,9 @@ jobs:
         with:
           command: build
           use-cross: true
-          args: --verbose --release --target ${{ matrix.target }} --manifest-path tools/fd/Cargo.toml
+          args: --verbose --release --target ${{ matrix.target }} --manifest-path tools/${{ matrix.tool }}/Cargo.toml
 
       - uses: actions/upload-artifact@v2
         with:
-          name: fd
-          path: dist/release/fd
+          name: ${{ matrix.tool }}
+          path: dist/release/${{ matrix.tool }}
