@@ -34,7 +34,7 @@ jobs:
           profile: minimal
           override: true
       - name: change directory
-        run: cd tools/${{ matrix.target }}
+        run: cd tools/${{ matrix.tool }}
       - name: Cargo build
         uses: actions-rs/cargo@v1
         with:
