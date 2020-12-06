@@ -17,12 +17,12 @@ jobs:
         target:
           - arm-unknown-linux-gnueabi
           # - aarch64-unknown-linux-gnu
-          - i686-unknown-linux-gnu
+          # - i686-unknown-linux-gnu
           # - x86_64-unknown-linux-gnu
         tool:
           # - fd
-          # - sd
-          - ripgrep
+          - sd
+          # - ripgrep
     steps:
       - uses: actions/checkout@v2
         with:
