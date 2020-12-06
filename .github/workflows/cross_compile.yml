@@ -16,13 +16,13 @@ jobs:
       matrix:
         target:
           - arm-unknown-linux-gnueabi
-          # - aarch64-unknown-linux-gnu
-          # - i686-unknown-linux-gnu
-          # - x86_64-unknown-linux-gnu
+          - aarch64-unknown-linux-gnu
+          - i686-unknown-linux-gnu
+          - x86_64-unknown-linux-gnu
         tool:
-          # - fd
+          - fd
           - sd
-          # - ripgrep
+          - ripgrep
     steps:
       - uses: actions/checkout@v2
         with:
@@ -44,4 +44,4 @@ jobs:
       - uses: actions/upload-artifact@v2
         with:
           name: ${{ matrix.tool }}
-          path: dist/release/${{ matrix.tool }}
+          path: tools/${{ matrix.tool }}/target/release/*
