@@ -33,12 +33,11 @@ jobs:
           target: ${{ matrix.target }}
           profile: minimal
           override: true
-      - name: change directory
-        run: cd tools/${{ matrix.tool }}
       - name: Cargo build
-        uses: actions-rs/cargo@v1
+        uses: marcopolo/cargo@master
         with:
           command: build
+          working-directory: tools/${{ matrix.tool }}
           use-cross: true
           args: --verbose --release --target ${{ matrix.target }}
 
