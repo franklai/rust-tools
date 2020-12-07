@@ -43,5 +43,5 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: ${{ matrix.tool }}
+          name: ${{ matrix.tool }}-${{ matrix.target }}
           path: tools/${{ matrix.tool }}/target/release/*
