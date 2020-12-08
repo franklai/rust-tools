@@ -4,6 +4,6 @@
 [submodule "tools/sd"]
 	path = tools/sd
 	url = https://github.com/chmln/sd.git
-[submodule "tools/ripgrep"]
-	path = tools/ripgrep
+[submodule "tools/rg"]
+	path = tools/rg
 	url = https://github.com/BurntSushi/ripgrep.git
