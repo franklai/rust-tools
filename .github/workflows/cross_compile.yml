@@ -41,6 +41,12 @@ jobs:
           use-cross: true
           args: --verbose --release --target ${{ matrix.target }}
 
+      - name: Compress binaries
+        uses: svenstaro/upx-action@v2
+        with:
+          file: tools/${{ matrix.tool }}/target/${{ matrix.target }}/release/${{ matrix.tool }}
+          strip: false
+
       - name: Upload binaries to release
         uses: svenstaro/upload-release-action@v2
         with:
