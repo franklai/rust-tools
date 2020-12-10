@@ -41,11 +41,11 @@ jobs:
           use-cross: true
           args: --verbose --release --target ${{ matrix.target }}
 
-      - name: Compress binaries
-        uses: svenstaro/upx-action@v2
-        with:
-          file: tools/${{ matrix.tool }}/target/${{ matrix.target }}/release/${{ matrix.tool }}
-          strip: false
+      # - name: Compress binaries
+      #   uses: svenstaro/upx-action@v2
+      #   with:
+      #     file: tools/${{ matrix.tool }}/target/${{ matrix.target }}/release/${{ matrix.tool }}
+      #     strip: false
       - name: Strip binary
         if: matrix.target == 'x86_64-unknown-linux-gnu'
         run: strip tools/${{ matrix.tool }}/target/${{ matrix.target }}/release/${{ matrix.tool }}
