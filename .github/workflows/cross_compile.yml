@@ -62,7 +62,7 @@ jobs:
         if: matrix.build == 'arm' || matrix.build == 'aarch64' || matrix.build == 'i686'
         run: |
           docker run --rm -v \
-            "$PWD/target:/target:Z" \
+            "$PWD/tools/${{ matrix.tool }}/target:/target:Z" \
             rustembedded/cross:${{ matrix.target }} \
             ${{ matrix.strip }} \
             /target/${{ matrix.target }}/release/${{ matrix.tool }}
