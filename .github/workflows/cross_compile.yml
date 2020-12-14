@@ -29,9 +29,13 @@ jobs:
           target: aarch64-unknown-linux-gnu
           strip: aarch64-linux-gnu-strip
         tool:
+          - bat
+          - delta
+          - exa
           - fd
-          - sd
+          - lsd
           - rg
+          - sd
     steps:
       - uses: actions/checkout@v2
         with:
