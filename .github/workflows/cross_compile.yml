@@ -32,6 +32,7 @@ jobs:
           - bat
           - exa
           - fd
+          - hyperfine
           - lsd
           - rg
           - sd
