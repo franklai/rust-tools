@@ -7,9 +7,6 @@
 [submodule "tools/rg"]
 	path = tools/rg
 	url = https://github.com/BurntSushi/ripgrep.git
-[submodule "tools/delta"]
-	path = tools/delta
-	url = https://github.com/delta-io/delta.git
 [submodule "tools/lsd"]
 	path = tools/lsd
 	url = https://github.com/Peltoche/lsd.git
