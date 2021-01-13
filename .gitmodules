@@ -19,3 +19,6 @@
 [submodule "tools/bat"]
 	path = tools/bat
 	url = https://github.com/sharkdp/bat.git
+[submodule "tools/hyperfine"]
+	path = tools/hyperfine
+	url = https://github.com/sharkdp/hyperfine.git
