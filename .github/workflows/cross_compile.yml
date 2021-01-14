@@ -14,7 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        build: [x86_64, i686, arm, aarch64]
+        build: [x86_64, i686, armv7, aarch64]
         include:
         - build: x86_64
           target: x86_64-unknown-linux-gnu
@@ -22,9 +22,9 @@ jobs:
         - build: i686
           target: i686-unknown-linux-gnu
           strip: i686-linux-gnu-strip
-        - build: arm
-          target: arm-unknown-linux-gnueabi
-          strip: arm-linux-gnueabi-strip
+        - build: armv7
+          target: armv7-unknown-linux-gnueabihf
+          strip: arm-linux-gnueabihf-strip
         - build: aarch64
           target: aarch64-unknown-linux-gnu
           strip: aarch64-linux-gnu-strip
@@ -63,7 +63,7 @@ jobs:
         if: matrix.build == 'x86_64' || matrix.build == 'i686'
         run: strip tools/${{ matrix.tool }}/target/${{ matrix.target }}/release/${{ matrix.tool }}
       - name: Strip release binary (docker)
-        if: matrix.build == 'arm' || matrix.build == 'aarch64'
+        if: matrix.build == 'armv7' || matrix.build == 'aarch64'
         run: |
           docker run --rm -v \
             "$PWD/tools/${{ matrix.tool }}/target:/target:Z" \
