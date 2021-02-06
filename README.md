@@ -10,6 +10,7 @@ cross compile several Rust tools
 
 ## tools
 - bat
+- delta
 - exa
 - fd
 - hyperfine
