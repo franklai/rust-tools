@@ -37,6 +37,7 @@ jobs:
           - lsd
           - rg
           - sd
+          - starship
     steps:
       - uses: actions/checkout@v2
         with:
