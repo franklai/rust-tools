@@ -22,3 +22,6 @@
 [submodule "tools/delta"]
 	path = tools/delta
 	url = https://github.com/dandavison/delta.git
+[submodule "tools/starship"]
+	path = tools/starship
+	url = https://github.com/starship/starship.git
