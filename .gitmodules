@@ -19,3 +19,6 @@
 [submodule "tools/hyperfine"]
 	path = tools/hyperfine
 	url = https://github.com/sharkdp/hyperfine.git
+[submodule "tools/dtool"]
+	path = tools/dtool
+	url = https://github.com/guoxbin/dtool.git
