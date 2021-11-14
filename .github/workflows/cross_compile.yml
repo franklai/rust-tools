@@ -30,9 +30,10 @@ jobs:
           strip: aarch64-linux-gnu-strip
         tool:
           - bat
-          - delta
+          - dtool
           - exa
           - fd
+          - fselect
           - hyperfine
           - lsd
           - rg
