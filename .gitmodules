@@ -22,3 +22,6 @@
 [submodule "tools/dtool"]
 	path = tools/dtool
 	url = https://github.com/guoxbin/dtool.git
+[submodule "tools/fselect"]
+	path = tools/fselect
+	url = https://github.com/jhspetersson/fselect.git
