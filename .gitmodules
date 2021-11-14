@@ -19,9 +19,3 @@
 [submodule "tools/hyperfine"]
 	path = tools/hyperfine
 	url = https://github.com/sharkdp/hyperfine.git
-[submodule "tools/delta"]
-	path = tools/delta
-	url = https://github.com/dandavison/delta.git
-[submodule "tools/starship"]
-	path = tools/starship
-	url = https://github.com/starship/starship.git
