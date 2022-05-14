@@ -28,3 +28,6 @@
 [submodule "tools/hexyl"]
 	path = tools/hexyl
 	url = https://github.com/sharkdp/hexyl.git
+[submodule "tools/xh"]
+	path = tools/xh
+	url = https://github.com/ducaale/xh.git
