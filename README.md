@@ -9,11 +9,13 @@ cross compile several Rust tools
 - aarch64-unknown-linux-gnu
 
 ## tools
-- bat
+- [bat](https://github.com/sharkdp/bat)
 - delta
-- exa
-- fd
-- hyperfine
-- lsd
-- rg
-- sd
+- [dtool](https://github.com/guoxbin/dtool)
+- [exa](https://github.com/ogham/exa)
+- [fd](https://github.com/sharkdp/fd)
+- [fselect](https://github.com/jhspetersson/fselect)
+- [hyperfine](https://github.com/sharkdp/hyperfine)
+- [lsd](https://github.com/Peltoche/lsd)
+- [rg](https://github.com/BurntSushi/ripgrep)
+- [sd](https://github.com/chmln/sd)
