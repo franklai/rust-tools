@@ -25,3 +25,6 @@
 [submodule "tools/fselect"]
 	path = tools/fselect
 	url = https://github.com/jhspetersson/fselect.git
+[submodule "tools/hexyl"]
+	path = tools/hexyl
+	url = https://github.com/sharkdp/hexyl.git

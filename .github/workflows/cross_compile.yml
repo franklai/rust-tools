@@ -34,6 +34,7 @@ jobs:
           - exa
           - fd
           - fselect
+          - hexyl
           - hyperfine
           - lsd
           - rg
