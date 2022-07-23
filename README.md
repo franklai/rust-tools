@@ -19,3 +19,24 @@ cross compile several Rust tools
 - [lsd](https://github.com/Peltoche/lsd)
 - [rg](https://github.com/BurntSushi/ripgrep)
 - [sd](https://github.com/chmln/sd)
+
+## one-liner to download latest
+
+```
+curl -s https://api.github.com/repos/franklai/rust-tools/releases/latest \
+ | grep browser_download_url \
+ | grep x86_64 \
+ | cut -d : -f 2,3 \
+ | tr -d \" \
+ | wget -nv --show-progress -i -
+```
+
+or
+
+```
+curl -s https://api.github.com/repos/franklai/rust-tools/releases/latest \
+ | python3 -c "import json, sys; j=json.load(sys.stdin); urls=[item['browser_download_url'] for item in j['assets']]; print('\n'.join(urls));" \
+ | grep x86_64 \
+ | wget -nv --show-progress -i -
+```
+
