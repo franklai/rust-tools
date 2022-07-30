@@ -10,11 +10,12 @@ cross compile several Rust tools
 
 ## tools
 - [bat](https://github.com/sharkdp/bat)
-- delta
+- ~~[delta](https://github.com/dandavison/delta)~~
 - [dtool](https://github.com/guoxbin/dtool)
 - [exa](https://github.com/ogham/exa)
 - [fd](https://github.com/sharkdp/fd)
 - [fselect](https://github.com/jhspetersson/fselect)
+- [hexyl](https://github.com/sharkdp/hexyl)
 - [hyperfine](https://github.com/sharkdp/hyperfine)
 - [lsd](https://github.com/Peltoche/lsd)
 - [rg](https://github.com/BurntSushi/ripgrep)
