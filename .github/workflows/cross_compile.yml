@@ -37,7 +37,7 @@ jobs:
           # - hexyl
           # - hyperfine
           # - lsd
-          # - rg
+          - rg
           # - sd
     steps:
       - uses: actions/checkout@v4
