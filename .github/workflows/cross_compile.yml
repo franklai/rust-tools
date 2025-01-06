@@ -40,17 +40,12 @@ jobs:
           - rg
           - sd
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           submodules: true
-      - uses: actions-rs/toolchain@v1
-        with:
-          toolchain: stable
-          target: ${{ matrix.target }}
-          profile: minimal
-          override: true
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
       - name: Cargo build
-        uses: marcopolo/cargo@master
+        uses: clechasseur/rs-cargo@v2
         with:
           command: build
           working-directory: tools/${{ matrix.tool }}
