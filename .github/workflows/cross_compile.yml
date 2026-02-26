@@ -35,10 +35,11 @@ jobs:
           - fd
           # - fselect
           # - hexyl
-          # - hyperfine
+          - hyperfine
           # - lsd
           - rg
           # - sd
+          - xh
     steps:
       - uses: actions/checkout@v4
         with:
