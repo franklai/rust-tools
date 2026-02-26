@@ -31,3 +31,6 @@
 [submodule "tools/xh"]
 	path = tools/xh
 	url = https://github.com/ducaale/xh.git
+[submodule "tools/eza"]
+	path = tools/eza
+	url = https://github.com/eza-community/eza.git
