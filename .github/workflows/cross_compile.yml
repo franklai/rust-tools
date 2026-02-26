@@ -13,6 +13,7 @@ jobs:
     name: Build tool
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         build: [x86_64, i686, armv7, aarch64]
         include:
