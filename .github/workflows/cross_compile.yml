@@ -33,11 +33,12 @@ jobs:
           # - bat
           # - dtool
           # - exa
+          - eza
           - fd
           # - fselect
           # - hexyl
           - hyperfine
-          # - lsd
+          - lsd
           - rg
           # - sd
           - xh
